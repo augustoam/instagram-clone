@@ -1,0 +1,9 @@
+{
+    "or": "Or",
+    "auth.email": "Phone number, username or email address",
+    "auth.password": "Password",
+    "auth.singup": "Sing Up",
+    "auth.login.facebook": "Log in with Facebook",
+    "auth.no.account": "Don't have an account? ",
+    "auth.forgot.password": "Forgoten password"
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 25 25">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rettangolo_16" data-name="Rettangolo 16" width="25" height="25" transform="translate(300.653 94.653)" fill="#144999"/>
+    </clipPath>
+  </defs>
+  <g id="Gruppo_di_maschere_10" data-name="Gruppo di maschere 10" transform="translate(-300.653 -94.653)" clip-path="url(#clip-path)">
+    <g id="bell_1_" data-name="bell (1)" transform="translate(303.025 95)">
+      <path id="Tracciato_15" data-name="Tracciato 15" d="M20.834,17.128a6.783,6.783,0,0,1-2.409-5.19V9.114a7.1,7.1,0,0,0-6.076-7.008V1.013a1.013,1.013,0,0,0-2.025,0V2.107A7.094,7.094,0,0,0,4.246,9.114v2.823a6.791,6.791,0,0,1-2.418,5.2,1.772,1.772,0,0,0,1.152,3.118H19.69a1.772,1.772,0,0,0,1.143-3.126Zm0,0" transform="translate(-1.208)" />
+      <path id="Tracciato_16" data-name="Tracciato 16" d="M12.573,28.413a3.8,3.8,0,0,0,3.721-3.038H8.852A3.8,3.8,0,0,0,12.573,28.413Zm0,0" transform="translate(-2.446 -4.108)" />
+    </g>
+  </g>
+</svg>

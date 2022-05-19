@@ -1,0 +1,19 @@
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" 
+   xmlns:cc="http://creativecommons.org/ns#" 
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+   xmlns:svg="http://www.w3.org/2000/svg" 
+   xmlns="http://www.w3.org/2000/svg" 
+   id="svg38" 
+   version="1.1" 
+   viewBox="0 0 20 20" 
+   height="10" 
+   fill='#000' 
+   width="10">
+   <g transform="rotate(90,280.35159,137.91892)">
+      <g id="g34" 
+         transform="matrix(0.98796662,0,0,1,146.74495,404.98903)">
+         <path transform="translate(0,-3.44)" 
+            d="m 6.327,3.676 4.951,4.951 a 0.80610173,0.80610173 0 1 1 -1.14,1.14 L 5.757,5.386 1.376,9.767 A 0.80610173,0.80610173 0 0 1 0.236,8.627 L 5.187,3.676 a 0.806,0.806 0 0 1 1.14,0 z" />
+      </g>
+   </g>
+</svg>

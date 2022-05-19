@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "jsx": "react",
+    "lib": [
+      "es2021"
+    ],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "strict": true,
+    "target": "esnext",
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "src/*"
+      ],
+      "@styles/*": [
+        "./src/styles/*"
+      ],
+      "@assets/*": [
+        "./src/assets/*"
+      ],
+      "@contexts/*": [
+        "./src/contexts/*"
+      ],
+      "@utils/*": [
+        "./src/utils/*"
+      ],
+      "@redux/*": [
+        "./src/redux/*"
+      ],
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@scenes/*": [
+        "./src/scenes/*"
+      ],
+      "@navigations/*": [
+        "./src/navigations/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

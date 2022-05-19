@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29" height="29" viewBox="0 0 29 29">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rettangolo_307" data-name="Rettangolo 307" width="29" height="29" transform="translate(294.813 94.813)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Gruppo_di_maschere_18" data-name="Gruppo di maschere 18" transform="translate(-294.813 -94.813)" clip-path="url(#clip-path)">
+    <g id="exchange_1_" data-name="exchange (1)" transform="translate(300.544 98.399)">
+      <path id="Tracciato_36" data-name="Tracciato 36" d="M9.228,7.971V8.98a1.532,1.532,0,0,0,.19.8.9.9,0,0,0,.784.454,1.346,1.346,0,0,0,.939-.46l3.33-3.33a1.877,1.877,0,0,0,0-2.652L11.142.46A1.346,1.346,0,0,0,10.2,0c-.485,0-.975.387-.975,1.253v.916A9.892,9.892,0,0,0,0,10.826a.588.588,0,0,0,1.057.418A8.289,8.289,0,0,1,9.228,7.971Zm0,0" transform="translate(0 0)"/>
+      <path id="Tracciato_37" data-name="Tracciato 37" d="M17.786,10.723a.587.587,0,0,0-.69.2A8.289,8.289,0,0,1,8.93,14.2V13.188c0-.865-.49-1.253-.975-1.253a1.346,1.346,0,0,0-.939.46l-3.33,3.33a1.878,1.878,0,0,0,0,2.652l3.33,3.33a1.346,1.346,0,0,0,.939.46c.485,0,.975-.387.975-1.253V20a9.892,9.892,0,0,0,9.224-8.658A.587.587,0,0,0,17.786,10.723Zm0,0" transform="translate(-0.621 -0.341)"/>
+    </g>
+  </g>
+</svg>

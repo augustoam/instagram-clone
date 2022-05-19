@@ -1,0 +1,4 @@
+export enum ActionType {
+    REHYDRATE = "persist/REHYDRATE",
+    SET_PUSH_NOTIFICATION_TOKEN = 'SET_PUSH_NOTIFICATION_TOKEN'
+}

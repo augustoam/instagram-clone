@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useRef, useState } from 'react'
-import { View } from 'react-native'
+import { View, Keyboard } from 'react-native'
 import { useNavigation, useTheme } from '@react-navigation/native'
 import { LocalizationContext } from '@contexts/Translations'
 import { BLUE, GRAY, MEDIUM_GRAY, WHITE } from '@styles/colors'
@@ -13,6 +13,13 @@ import PngImage from '@assets/png/PngImage'
 import HorizontalLine from '@components/molecules/HorizontalLine'
 import SvgIcon from '@assets/svg/SvgIcon'
 import IconDataInput from '@components/molecules/IconDataInput'
+import { connect } from 'react-redux'
+import { AppState } from 'redux/store'
+import { ThunkDispatch } from 'redux-thunk'
+import { AnyAction } from 'redux'
+import { onMessage } from '@redux/ui/alert/actions'
+import { onLoadingStatusChanged } from '@redux/ui/loader/actions'
+import { login } from '@redux/authentication/actions'
 
 interface LoginProps {
   isAuthenticated?: boolean
@@ -31,17 +38,29 @@ const LoginScreen: React.FC<LoginProps> = (props) => {
   const [eyePassword, setEyePassword] = useState<boolean>(false)
 
   const onPressLogin = () => {
-    // if (email && email != "" && password && password != "") {
-    //   Keyboard.dismiss()
-    //   props.loading(true)
-    //   props.authenticate(email, password)
-    // } else {
-    //   props.onMessage("error.login.empty.credentials")
-    // }
+    if (email && email != "" && password && password != "") {
+      Keyboard.dismiss()
+      props.loading(true)
+      props.authenticate(email, password)
+    } else {
+      props.onMessage("error.login.empty.credentials")
+    }
   }
 
   useEffect(() => buttonRef.current?.setDisable(!email || !password), [email, password])
 
+  useEffect(() => {
+    if (props.isAuthenticated) {
+      goToMain()
+    }
+  }, [props.isAuthenticated])
+
+  const goToMain = () => {
+    navigation.reset({
+      index: 0,
+      routes: [{ name: 'Main' }]
+    })
+  }
 
   return <><KeyboardAvoiding>
     <Image source={PngImage.LOGO} />
@@ -120,4 +139,14 @@ const LoginScreen: React.FC<LoginProps> = (props) => {
   </>
 }
 
-export default LoginScreen
+const mapState = (state: AppState) => ({
+  isAuthenticated: state.authReducer.isAuthenticated
+})
+
+const mapDispatch = (dispatch: ThunkDispatch<any, any, AnyAction>) => ({
+  onMessage: (message: string) => dispatch(onMessage(message)),
+  loading: (isLoading: boolean) => dispatch(onLoadingStatusChanged(isLoading)),
+  authenticate: (email: string, password: string) => dispatch(login(email, password))
+})
+
+export default connect(mapState, mapDispatch)(LoginScreen)

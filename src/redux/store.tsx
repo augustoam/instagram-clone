@@ -19,7 +19,7 @@ const persistConfig = {
     key: 'reactBaseApp',
     storage: AsyncStorage,
     whitelist: [
-        'authReducer', 'userReducer', 'sliderIntroReducer', 'pushNotificationReducer', 'backgroundImageReducer',
+        'authReducer', 'userReducer', 'sliderIntroReducer', 'pushNotificationReducer',
     ],
     blacklist: ['loaderReducer', 'alertReducer'],
 };

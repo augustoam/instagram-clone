@@ -33,7 +33,7 @@ const onBiometric = (isBiometric: boolean) => ({
 })
 
 const onCompleteLogin = (user: any) => (dispatch: any) => {
-    dispatch(onAddPushNotificationToken())
+    //dispatch(onAddPushNotificationToken())
     dispatch(onUserProfile(user))
     dispatch(onIsAuthenticated(true))
 }
